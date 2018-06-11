@@ -44,7 +44,7 @@ int thisChar = 'a';
 int Success = FALSE;
 
 void setup() {
-  
+
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(9600);
 //   myRTC.setDS1302Time(00, 3, 15, 3, 6, 6, 2018);
@@ -78,7 +78,7 @@ void Alarm(void){
   while(puzzleNotSolved()){
    puzzleNotSolved();
    Melody();
-  }   
+  }
 }
 
 boolean puzzleNotSolved(){
@@ -108,7 +108,6 @@ void Melody(){
       int pauseBetweenNotes = noteDuration * 1.30;
       delay(pauseBetweenNotes);
       // stop the tone playing:
-      noTone(10);
+      noTone(26);
     }
 }
-
